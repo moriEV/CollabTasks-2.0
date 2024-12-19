@@ -1,0 +1,23 @@
+﻿<Window x:Class="CollabTasks_2._0.AddUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CollabTasks_2._0"
+        mc:Ignorable="d"
+        Title="Добавление пользователя" Height="200" Width="318" ResizeMode="NoResize">
+    <Grid Margin="10">
+        <!-- Email Label -->
+        <Label Content="Почта:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontSize="14"/>
+
+        <!-- Email TextBox -->
+        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70,10,0,0" Width="200" FontSize="14" Background="#F5F5F5" BorderBrush="#1565C0"/>
+
+        <!-- Admin Radio Button -->
+        <CheckBox x:Name="AdminCheckBox" Content="Выдать права админа" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" FontSize="14"/>
+
+        <!-- Add User Button -->
+        <Button x:Name="AddUserButton" Content="Добавить пользователя" HorizontalAlignment="Center" Margin="0,106,0,0" Width="166" FontSize="14" Click="AddUserButton_Click" Background="#E0E0E0" BorderBrush="#1565C0" Foreground="#333333" Height="35" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
+

@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="CollabTasks_2._0.TaskControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CollabTasks_2._0"
+             mc:Ignorable="d" Height="120" Width="286" >
+    <Grid Margin="0,0,-78,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Description -->
+        <TextBlock x:Name="DescriptionTextBlock" Grid.Row="0" Grid.Column="0" Margin="10,10,10,5" TextWrapping="Wrap" Text="Суть задания:" VerticalAlignment="Top" />
+
+        <!-- Deadline -->
+        <TextBlock x:Name="DeadlineTextBlock" Grid.Row="1" Grid.Column="0" Margin="10,0,10,10" TextWrapping="Wrap" Text="Крайний срок:" VerticalAlignment="Top" />
+
+        <!-- Delete Button -->
+        <Button x:Name="DeleteButton" Content="×" Grid.Row="0" Grid.Column="1" Margin="0,10,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="25" Height="25" Click="DeleteButton_Click" />
+
+        <!-- Action Buttons -->
+        <Button x:Name="CompleteButton" Content="Выполнено" Margin="10,19,167,10" Click="CompleteButton_Click" Grid.Row="2" Background="#E0E0E0" BorderBrush="#1565C0" Foreground="#333333"/>
+        <Button x:Name="FailButton" Content="Провалено" Margin="202,19,10,10" Click="FailButton_Click" Grid.Row="2" Grid.ColumnSpan="2" Background="#E0E0E0" BorderBrush="#1565C0" Foreground="#333333"/>
+    </Grid>
+</UserControl>
+
